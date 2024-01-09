@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Shopify-REST"
+version = "0.0.1"
+authors = [
+  { name="Charles Ueltschey", email="chaseuelt@gmail.com" },
+]
+description = "A lightweight system of classes for the shopify REST API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/cueltschey/Python-Shopify-REST"
+Issues = "https://github.com/cueltschey/Python-Shopify-REST/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/Shopify-REST"]
